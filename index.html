@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#principios">Principios</a></li>
+            <li><a href="#background">background</a></li>
+            <li><a href="#border">Border</a></li>
+            <li><a href="#unidades">Unidades</a></li>
+        </ul>
+    </div>
+    <h1>GUIA BASICA DE CSS - ALEX ALEJO</h1>
+  
+   
+    <hr>
+    <div>
+        <h3 class="subtitulo" id="principios">CONECTANDO HTML CON CSS</h5>
+            <p> Hay 3 formas:</p>
+            <ul>
+                <li>Forma 1: Dentro del html usar las etiquetas: <p class="codigo">&lt;style&gt; Aqui va el codigo
+                        css&lt;/style&gt;</p>
+                </li>
+                <li>Forma 2: Crear un archivo externo y usar el <p class="codigo">&lt;link rel="stylesheet" href"aqui va
+                        direccion y nombre del archivo css"&gt; </p>
+                </li>
+                <li>Forma 2: dentro de una etiqueta usar el estilo en linea<p class="codigo">&lt;div style="codigo
+                        css""&gt; &lt;/div&gt;</p>
+                </li>
+            </ul>
+    </div>
+    <hr>
+    <div>
+        <h3 class="subtitulo">SINTAXIS DE CSS &lt;&gt;</h5>
+            <p>Se realiza de la siguiente forma: <br><b class="css">selector {<br>propiedad1: valor <br>propiedad2:
+                    valor
+                    <br>propiedadN: valor <br>}</b></p>
+    </div>
+    <hr>
+    <div>
+        <h3 class="subtitulo">SELECTORES DE CSS</h5>
+            <p>Selector Elementales:</p>
+            <ul>
+                <li> Selector universal: <b class="css">*{propiedad1: valor}</b></li>
+                <li> Selector etiqueta: <b class="css">h1,h2,p,etc{propiedad1: valor}</b></li>
+                <li> Selector etiqueta: <b class="css">h1,h2,p,etc{propiedad1: valor}</b></li>
+            </ul>
+            <p>Selector De Atributo:</p>
+            <ul>
+                <li> id: id del elemento: <br>Por ejemplo tenemos el elemento <p class="codigo">&lt;div id="titulo"&gt;
+                    </p> El css seria: <b class="css">#titulo{propiedad: valor}</b></li>
+                <li> clase: clase del elemento: <br>Por ejemplo tenemos el elemento <p class="codigo">&lt;div
+                        class="tarjeta"&gt; </p> El css seria: <b class="css">.tarjeta{propiedad: valor}</b></li>
+                <li>Algo muy impor</li>
+            </ul>
+    </div>
+    <hr>
+    <div>
+        <h3 class="subtitulo">COLORES</h5>
+            <p>Hay 4 formas</p>
+            <ul>
+                <li>nombre del color: <b>red,blue,tomato,yellow,etc</b></li>
+                <li>Codigo hexadecimal: <b>#11acc1,#238491,etc</b></li>
+                <li>RGB: <b>rgba(0-255,0-255,0-255,0-1)</b><i> Ese ultimo valor es la transparencia va del 0 al 1
+                        separado por punto</i></li>
+                <li>HSL: <b>hsl(0-100%,0-100%,0-100%)</b></li>
+            </ul>
+    </div>
+    <hr>
+    <div>
+        <h3 class="subtitulo" id="background" >BACKGROUND - FONDO</h5>
+            <p>Existen los siguientes: </p>
+            <ul>
+                <li><b>background-color</b>: <br>Ejemplo: Selector{background-color:red}</li>
+                <p class="background-color"></p>
+                <li><b>background: linear-gradient(angulo medido en deg, color - De donde arranca medido en %,color - De
+                        donde arranca medido en %, etc)</b>: <br>Ejemplo: Selector{ background: linear-gradient(0deg,
+                    green 20%, yellow 70% ,red 90%)}</li>
+                <p class="linear-gradient"></p>
+                <li><b>background-image: url(link)</b>: <br>Ejemplo: Selector{ background-image: url(img/fubuki.jpg);}
+                </li>
+                <p class="background-image">
+                </p>
+                <p>Para que no se repita usamos el: <br><b>background-repeat: no-repeat</b><br> <i>Podemos usar: no-repeat,repeat-x, repeat-y</i></p>
+                <p class="background-image2">
+                </p>
+                <p>Para la pocision usamos: <br><b>background-position: bottom right;</b><br> "bottom, right,top,left, o
+                    podemos combinar estos"</p>
+                <p class="background-image3">
+                </p>
+                <p><b>USAR TODO ESTO EN UNA SOLA PROPIEDAD BACKGROUND</b>: <br><b> background: red url(img/fubuki.jpg) no-repeat bottom right;</b></p>
+                <p class="background-image5">
+                </p>
+                <p><b>EN CASO DE IMAGEN TAMAÑO DEL BACKGROUND</b>: <br><b> background-size: ancho alto; <br>background-size: 100%;<br> background-size: cover; </b><i>"Rellena todo el espacio</i> "<br> <b>background-size: contain;</b> <i>"No importa el tamaño del contenedor hace que la imagen no se salga"</i> </b></p>
+                <p class="background-image6">
+                </p>
+                <p>Para efecto que nos siga (PARALLAX) usamos: <br><b>background-attachment: fixed;</b></p>
+                <p class="background-image4">
+                </p>
+            </ul>
+    </div>
+    <hr>
+    <div id="border" >
+        <h3 class="subtitulo" >BORDES</h5>
+           
+            <ul>
+                <li>border-style: dashed</li>
+                <p class="dashed">TEXTO DE PRUEBA</p>
+                <li>border-style: solid</li>
+                <p class="solid">TEXTO DE PRUEBA</p>
+                <li>border-style: double</li>
+                <p class="double">TEXTO DE PRUEBA</p>
+                <li>border-style: inset</li>
+                <p class="inset">TEXTO DE PRUEBA</p>
+                <li>border-style: outset</li>
+                <p class="outset">TEXTO DE PRUEBA</p>
+                <li>border-style: none</li>
+                <p class="none">TEXTO DE PRUEBA</p>
+                <li>border-style: solid</li>
+                <p class="hidden">TEXTO DE PRUEBA</p>
+                <li>border-style: solid</li>
+                <p class="mix">TEXTO DE PRUEBA</p>
+                <li>   border-style: solid;
+                    border-color: brown;
+                    border-width: 20px;</li>
+                <p class="border2">TEXTO DE PRUEBA</p>
+                <li>  border: solid yellow 10px;</li>
+                <p class="border3">TEXTO DE PRUEBA</p>
+                <li>  Tambien se puede combinar: <b>  border-left: solid yellow 10px;
+                    border-bottom: dashed red 15px;
+                    border-right: inset blue 18px;
+                    border-top: double green 25px;</b></li>
+                <p class="border4">TEXTO DE PRUEBAA</p>
+                <li> Se puede redondear: border-radius : 50%</li>
+                <p class="border5">TEXTO DE PRUEBA</p>
+              
+            </ul>
+    </div>
+<hr>
+    <div id="unidades">
+        <h3 >UNIDADES DE MEDIDA</h5>
+            <p>Hay 4 formas</p>
+            <ul>
+                <li>nombre del color: <b>red,blue,tomato,yellow,etc</b></li>
+                <li>Codigo hexadecimal: <b>#11acc1,#238491,etc</b></li>
+                <li>RGB: <b>rgba(0-255,0-255,0-255,0-1)</b><i> Ese ultimo valor es la transparencia va del 0 al 1
+                        separado por punto</i></li>
+                <li>HSL: <b>hsl(0-100%,0-100%,0-100%)</b></li>
+            </ul>
+    </div>
+    <hr>
+</body>
+
+</html>

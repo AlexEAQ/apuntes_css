@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: rgba(54, 209, 230, 0.3);
+}
+hr {
+  background-color: #000;
+  height: 5px;
+  border-color: aqua;
+}
+.nav {
+  display: inline;
+  width: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+
+  right: 0;
+}
+
+.nav ul li {
+  display: inline;
+
+  padding: 10px;
+}
+
+.nav ul li:hover {
+  display: inline;
+  padding: 10px;
+  border: 3px blue solid;
+}
+
+.nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(25, 133, 228);
+}
+
+.codigo {
+  background: rgb(42, 54, 61);
+  color: rgb(21, 198, 204);
+  display: inline;
+}
+
+.css {
+  color: rgb(230, 218, 54);
+  background: #000;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.background-color {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+}
+
+.linear-gradient {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(0deg, green 20%, yellow 70%, red 90%);
+}
+
+.background-image {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  background-image: url(img/fubuki.jpg);
+  border: 5px yellowgreen solid;
+}
+
+.background-image2 {
+  margin: auto;
+  background-color: red;
+  width: 600px;
+  height: 400px;
+  background-image: url(img/fubuki.jpg);
+  background-repeat: no-repeat;
+  border: 5px yellowgreen solid;
+}
+
+.background-image3 {
+  margin: auto;
+  background-color: red;
+  width: 600px;
+  height: 400px;
+  background-image: url(img/fubuki.jpg);
+  background-repeat: no-repeat;
+  border: 5px yellowgreen solid;
+  background-position: bottom right;
+}
+
+.background-image4 {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-color: grey;
+  background-image: url(img/fubuki.jpg);
+  background-attachment: fixed;
+}
+
+.background-image5 {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background: red url(img/fubuki.jpg) no-repeat bottom right;
+}
+
+.background-image6 {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-color: blueviolet;
+  background-image: url(img/fubuki.jpg);
+  background-size: cover;
+}
+
+.dashed {
+  border-style: dashed;
+}
+.solid {
+  border-style: solid;
+}
+.double {
+  border-style: double;
+}
+
+.inset {
+  border-style: inset;
+}
+
+.outset {
+  border-style: outset;
+}
+
+.none {
+  border-style: none;
+}
+
+.hidden {
+  border-style: hidden;
+}
+.mix {
+  border-style: mix;
+}
+.border2 {
+  border-style: solid;
+  border-color: brown;
+  border-width: 20px;
+}
+.border3 {
+  border: solid yellow 10px;
+}
+
+.border4 {
+  width: 200px;
+  border-left: solid yellow 10px;
+  border-bottom: dashed red 15px;
+  border-right: inset blue 18px;
+  border-top: double green 25px;
+}
+
+.border5 {
+  width: 50px;
+  height: 50px;
+  border: solid green 10px;
+  border-radius: 50%;
+}
+#unidades {
+  background-color: aquamarine;
+}
